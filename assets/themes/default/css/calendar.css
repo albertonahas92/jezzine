@@ -1,0 +1,141 @@
+
+#wrap {
+  
+    margin: 3em auto;
+}
+
+#external-events {
+    float: left;
+    width: 150px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+#external-events h4 {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+.external-event {
+    /* try to mimick the look of a real event */
+    margin: 10px 0;
+    padding: 2px 4px;
+    background: #3366CC;
+    color: #fff;
+    font-size: .85em;
+    cursor: pointer;
+}
+
+#external-events p {
+    margin: 1.5em 0;
+    font-size: 11px;
+    color: #666;
+}
+
+.tooltip{
+    font-size:10px;
+
+}
+.modal {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.15);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.tooltip {
+  
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+   
+   
+}
+
+.tooltip.in {  opacity: 0.9;  filter: alpha(opacity=90);}
+.tooltip.top {  margin-top: -3px;  padding: 5px 0;}
+.tooltip.right {  margin-left: 3px;  padding: 0 5px;}
+.tooltip.bottom {  margin-top: 3px;  padding: 5px 0;}
+.tooltip.left {  margin-left: -3px;  padding: 0 5px;}
+.tooltip-inner {  max-width: 300px;  padding: 3px 8px;  color: #fff;  text-align: center;  background-color: #000;  border-radius: 4px;}
+.tooltip-arrow {  position: absolute;  width: 0;  height: 0;  border-color: transparent;  border-style: solid;}
+.tooltip.top .tooltip-arrow {  bottom: 0;  left: 50%;  margin-left: -5px;  border-width: 5px 5px 0;  border-top-color: #000;}
+.tooltip.top-left .tooltip-arrow {  bottom: 0;  right: 5px;  margin-bottom: -5px;  border-width: 5px 5px 0;  border-top-color: #000;}
+.tooltip.top-right .tooltip-arrow {  bottom: 0;  left: 5px;  margin-bottom: -5px;  border-width: 5px 5px 0;  border-top-color: #000;}
+.tooltip.right .tooltip-arrow {  top: 50%;  left: 0;  margin-top: -5px;  border-width: 5px 5px 5px 0;  border-right-color: #000;}
+.tooltip.left .tooltip-arrow {  top: 50%;  right: 0;  margin-top: -5px;  border-width: 5px 0 5px 5px;  border-left-color: #000;}
+.tooltip.bottom .tooltip-arrow {  top: 0;  left: 50%;  margin-left: -5px;  border-width: 0 5px 5px;  border-bottom-color: #000;}
+.tooltip.bottom-left .tooltip-arrow {  top: 0;  right: 5px;  margin-top: -5px;  border-width: 0 5px 5px;  border-bottom-color: #000;}
+.tooltip.bottom-right .tooltip-arrow {  top: 0;  left: 5px;  margin-top: -5px;  border-width: 0 5px 5px;  border-bottom-color: #000;}
+
+.modal>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #fff;
+    color: #444;
+}
+
+.modal header {
+    font-weight: bold;
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+
+#external-events p input {
+    margin: 0;
+    vertical-align: middle;
+}
+
+#calendar {
+    /* 		float: right; */
+    margin: 0 auto;
+    /* width: 900px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px #C3C3C3; */
+    width:90%;
+}
+
+.iziModal{
+    max-height:500px;
+   
+}
+
+.iziModal-content{
+       max-height:500px;
+     overflow-y: auto;
+}

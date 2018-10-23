@@ -1,0 +1,218 @@
+
+.iziModal{
+    max-height:500px;
+   
+}
+
+.iziModal-content{
+       max-height:500px;
+     overflow-y: auto;
+}
+
+
+
+/* filter */
+
+.cal-filter{
+     font-family: 'Quattrocento',
+     serif;
+     font-size:1.5em;
+margin-top:3em;
+margin-left:4em;
+}
+
+.cal-filter li{
+    display:inline-block;
+    cursor: pointer;
+    color:gray;
+transition:all 500ms;
+margin:0.2em;
+}
+
+
+
+.cal-filter li.active{
+    color:black;
+    text-decoration: underline;
+}
+
+/* months */
+.mycalendar ul.months{
+
+display:flex;
+padding:0px 3em;
+background-color:gray;
+color:white;
+text-align:center;
+}
+
+.mycalendar ul.months li{
+
+    flex:1 0 auto;
+cursor: pointer;
+padding:1em 2px;
+margin:0px 3px;
+border-top:2px solid darkgray;
+transition:border 500ms;
+
+}
+
+.mycalendar .evented:not(.active) {
+   background-color: #192636;
+   color:white;
+}
+
+
+.mycalendar ul.months li.active{
+
+    border-top-color:#2be18e ;
+}
+
+
+/* days */
+
+.mycalendar ul.days {
+    font-family: 'Quattrocento',
+    serif;
+    display: flex;
+    padding: 0px 7em;
+    background-color:#efefef;
+    color: black;
+    text-align: center;
+   font-weight:bold;
+  
+}
+
+.mycalendar ul.days li {
+    flex: 1 0 auto;
+    cursor: pointer;
+    padding: 2em 2px;
+   text-transform: uppercase;
+   border:1px solid #ddd;
+   border-bottom:none;
+    transition: all 500ms;
+    
+}
+.mycalendar ul.days li .day-text {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+
+.mycalendar ul.days li .day-num{
+    font-size:2rem;
+
+    margin-bottom:5px;
+}
+
+.mycalendar ul.days li.active {
+  background-color: #2be18e;
+  color:white;
+}
+
+
+/* event */
+
+.cal-events{
+    margin:5em;
+    font-family: 'Quattrocento',
+    serif;
+}
+
+.cal-events p {
+   font-size:0.8em;
+     font-family: sans-serif,
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+ min-height:200px;
+  
+    font-size: 25px;
+    text-align: left;
+}
+.mycalendar-event{
+  background-repeat: no-repeat !important;
+  background-size:cover !important;
+  
+    padding-top:5em;
+    padding-bottom:5em;
+    padding-left:3em;
+    padding-right:2em;
+    color:white;
+    position: relative;
+    background:#192636;
+}
+.mycalendar-event.day-cell.active {
+    background-color: #2be18e !important;
+}
+
+.day-cell .day-text {
+    font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+.mycalendar-event.day-cell::after{
+
+content:"";
+position: absolute;
+right:-20px;
+z-index: 4;
+ width: 0;
+ height: 0;
+ top:45%;
+ border-top: 20px solid transparent;
+ border-bottom: 20px solid transparent;
+ border-left: 20px solid #192636;
+
+}
+
+.mycalendar-event{
+
+    cursor: pointer;
+}
+
+.mycalendar-event.day-cell.active::after{
+ border-left: 20px solid #2be18e;
+}
+
+
+
+.mycalendar-event-desc {
+    font-size: 0.7em;
+    font-family: sans-serif;
+    position: relative;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.mycalendar-event-desc::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    z-index: 4;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+   
+}
+
+.mycalendar-event-desc.type-0::after{
+ border-left: 8px solid #fdb918;
+}
+.mycalendar-event-desc.type-1::after {
+    border-left: 8px solid #06b9c0;
+}
+.mycalendar-event-desc.type-2::after {
+    border-left: 8px solid #00bcad;
+}
