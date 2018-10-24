@@ -35,8 +35,8 @@ class Welcome extends Public_Controller {
         $this->load->model('events_model');
         $events = $this->events_model->get_all();
 
-        $this->load->model('calendarevents_model');
-        $calendar_event = $this->calendarevents_model->get_by_date();
+        $this->load->model('CalendarEvents_model');
+        $calendar_event = $this->CalendarEvents_model->get_by_date();
 
         // set content data
         $content_data = array(
